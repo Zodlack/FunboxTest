@@ -5,51 +5,50 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Funboxtets</title>
+    <link rel="shortcut icon" href="./icon/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="css/bootstrap-reboot.min.css">
     <link rel="stylesheet" href="css/fonts.css">
     <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
-    <div class="promo">
-
-        <h1>Ты сегодня покормил кота ?</h1>
-        <div class="promo__wrapper">
-            <div class="box" id="box">
-                <div class="promo__item" id="item">
-                    <div class="promo__item-title">
-                        <div class="corner" id="corner"></div>
-                        <div class="text" id="text">
-                            <div class="text__default" id="td">Сказачное заморское явство</div>
-                            <div class="text__selected_hidden" id="ts">Котэ не одобряет ?</div>
-                        </div>
+    <section class="promo">
+        <div class="container">
+            <h1>Ты сегодня покормил кота ?</h1>
+            <div class="promo__wrapper">
+                <div class="promo__list">
+                    <div class="promo__item item" onclick="selectedItem(0)" onmouseout="hoverItem(0)" onmouseover="hoverItem(0)">
+                        <p class='item__subtitle'>Сказочное заморское яство</p>
+                        <h2 class='item__title'>Нямушка</h2>
+                        <p class='item__flavor'>с фуа-гра</p>
+                        <p class='item__descr'>10 порций<br>мышь в подарок</p>
+                        <div class='item__size size'>0,5<br><span>кг</span></div>
                     </div>
-                    <div class="promo__info" id="info">
-                        <div class="promo__block">
-                            <h2>Нямушка
-                                <span>с фуа-гра</span>
-                            </h2>
-                            <div class="promo__descr">10 порций<br>мышь в подарок</div>
-                        </div>
-                        <div class="promo__image">
-                            <img src="img/cat.png" alt="cat">
-                        </div>
-                        <div class="promo__weight" id="weight">
-                            <span>0,5</span>
-                            <span class="fs">кг</span>
-                        </div>
+                    <p class='item__text'>Чего сидишь? Порадуй котэ, <span class='item__link' onclick="selectedItem(0)">купи.</span></p>
+                </div>
+                <div class="promo__list">
+                    <div class="promo__item item" onclick="selectedItem(1)" onmouseout="hoverItem(1)" onmouseover="hoverItem(1)">
+                        <p class='item__subtitle'>Сказочное заморское яство</p>
+                        <h2 class='item__title'>Нямушка</h2>
+                        <p class='item__flavor'>с рыбой</p>
+                        <p class='item__descr'>40 порций<br>2 мыши в подарок</p>
+                        <div class='item__size size'>2<br><span>кг</span></div>
                     </div>
-                    <div class="promo__subtext" id="subtext">
-                        Чего сидишь? Порадуй котэ, <span id="click">купи.</span>
+                    <p class='item__text'>Чего сидишь? Порадуй котэ, <span class='item__link'onclick="selectedItem(1)">купи.</span></p>
+                </div>
+                <div class="promo__list">
+                    <div class="promo__item item disabled" onclick="selectedItem(2)" onmouseout="hoverItem(2)" onmouseover="hoverItem(2)">
+                        <p class='item__subtitle'>Сказочное заморское яство</p>
+                        <h2 class='item__title'>Нямушка</h2>
+                        <p class='item__flavor'>с курой</p>
+                        <p class='item__descr'>100 порций<br>5 мышей в подарок<br>заказчик доволен</p>
+                        <div class='item__size size'>5<br><span>кг</span></div>
                     </div>
-                    <div class="promo__subdescr_hidden" id="subdescr">
-                        Печень утки разварная с артишоками.
-                    </div>
+                    <p class='item__text'>Чего сидишь? Порадуй котэ, <span class='item__link'onclick="selectedItem(2)">купи.</span></p>
                 </div>
             </div>
         </div>
-    </div>
+    </section>
     
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
 <script src="js/script.js"></script>
 </body>
 </html>

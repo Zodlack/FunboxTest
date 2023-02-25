@@ -1,0 +1,15 @@
+@import 'src/sass/variables.scss';
+
+
+*{
+    font-family:'Trebuchet MS', 'Exo 2.0',sans-serif ;
+}
+body{
+    background: url("../img/bg.png") center (center/cover) no-repeat fixed;
+}
+.container{
+    margin: 67px auto;
+    max-width: 1180px;
+}
+@import 'src/sass/promo.scss';
+@import 'src/sass/media.scss';
